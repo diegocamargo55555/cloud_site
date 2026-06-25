@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KickStream - O Melhor do Futebol</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">KICKSTREAM</a>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title" id="hero-title">O Futebol Respira Aqui.</h1>
+            <p style="margin-bottom: 20px; font-size: 1.2rem;">Acompanhe os principais campeonatos regionais ao vivo ou quando quiser.</p>
+            <button class="hero-btn" onclick="alert('Funcionalidade de player em desenvolvimento!')">
+                ▶ Assistir Agora
+            </button>
+        </div>
+    </section>
+
+    <section class="filters">
+        <select id="filter-campeonato">
+            <option value="all">Todos os Campeonatos</option>
+            <!-- Preenchido via JS -->
+        </select>
+        <select id="filter-status">
+            <option value="all">Todos os Status</option>
+            <option value="Disponível">Disponível</option>
+            <option value="Ao Vivo">Ao Vivo</option>
+            <option value="Em Breve">Em Breve</option>
+        </select>
+    </section>
+
+    <section class="grid-container" id="games-grid">
+        <!-- Cards de jogos gerados via JS -->
+        <p style="text-align: center; width: 100%;">Carregando jogos...</p>
+    </section>
+
+    <footer style="text-align: center; padding: 40px; color: #777; margin-top: 40px; border-top: 1px solid #333;">
+        <p>&copy; 2024 KickStream. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
